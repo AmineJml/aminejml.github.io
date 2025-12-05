@@ -1,6 +1,7 @@
 ---
+layout: default
+---
 
-## layout: default
 
 # ▣ Hey, I am Amine Jamal
 
