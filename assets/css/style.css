@@ -77,7 +77,7 @@ nav {
 
 /* SECTIONS */
 .section {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 80px auto;
   padding: 0 30px;
 }
@@ -167,6 +167,67 @@ footer {
   opacity: 0.6;
   font-size: 0.9rem;
 }
+
+/* PROJECT ACCORDION */
+.project {
+    margin-bottom: 20px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    background: rgba(255,255,255,0.03);
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px 20px;
+    user-select: none;
+    transition: background 0.2s;
+}
+
+.project-header:hover {
+    background: rgba(255,255,255,0.08);
+}
+
+.project-header h3 {
+    margin-left: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.project-header .arrow {
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.project-content {
+    display: none;
+    padding: 15px 20px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.project-content p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.project-content a {
+    color: #e6e6eb;
+    text-decoration: underline;
+    opacity: 0.85;
+}
+
+.project-content a:hover {
+    opacity: 1;
+}
+
+.project-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
 
 /* MOBILE MENU */
 .menu-btn {

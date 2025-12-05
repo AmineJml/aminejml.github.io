@@ -1,1 +1,117 @@
-<h1>Projects</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Amine Jamal | Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="grid-bg"></div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Amine Jamal</div>
+
+            <div class="nav-links desktop-nav">
+                <a href="index.html">Home</a>
+                <a href="#all-projects">All Projects</a>
+            </div>
+
+            <div class="menu-btn" onclick="toggleMenu()">⋮</div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="#all-projects">All Projects</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>All Projects</h1>
+        <p>Click on a project title to expand and view details, images, technologies used, what I learned, and links to GitHub repos.</p>
+    </section>
+
+    <section class="section" id="all-projects">
+
+        <!-- Project Example -->
+        <div class="project">
+            <div class="project-header" onclick="toggleProject(this)">
+                <span class="arrow">►</span>
+                <h3>Indoor Temperature–Humidity Monitoring System</h3>
+            </div>
+            <div class="project-content">
+                <p><strong>Description:</strong> Raspberry Pi system with a real-time web dashboard for monitoring temperature and humidity.</p>
+                <p><strong>Tools/Skills:</strong> Python, Raspberry Pi, GPIO, Web Dashboard</p>
+                <p><strong>Learning:</strong> Sensor interfacing, data visualization, web integration, Linux systems</p>
+                <p><strong>University:</strong> Uppsala University</p>
+                <p><strong>Date:</strong> Sep 2025 – Nov 2025</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/AmineJml/pi-thermometer" target="_blank">Repo Link</a></p>
+                <!-- Optional: Images -->
+                <!-- <img src="assets/images/pi-thermometer.jpg" alt="Pi Thermometer Screenshot" class="project-image"> -->
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-header" onclick="toggleProject(this)">
+                <span class="arrow">►</span>
+                <h3>Webots Robot Simulation</h3>
+            </div>
+            <div class="project-content">
+                <p><strong>Description:</strong> Programmed autonomous robot behavior using Ada in Webots simulation.</p>
+                <p><strong>Tools/Skills:</strong> Ada, Webots, Robotics Algorithms</p>
+                <p><strong>Learning:</strong> Robotics programming, simulation environment, path planning</p>
+                <p><strong>University:</strong> Uppsala University</p>
+                <p><strong>Date:</strong> Sep 2025 – Nov 2025</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/AmineJml/webots-robot" target="_blank">Repo Link</a></p>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-header" onclick="toggleProject(this)">
+                <span class="arrow">►</span>
+                <h3>Parallel Coding Exercises</h3>
+            </div>
+            <div class="project-content">
+                <p><strong>Description:</strong> Optimized embedded algorithms using parallelization and concurrency techniques.</p>
+                <p><strong>Tools/Skills:</strong> C/C++, Multithreading, Performance Tuning</p>
+                <p><strong>Learning:</strong> Concurrency, performance optimization, embedded coding practices</p>
+                <p><strong>University:</strong> Uppsala University</p>
+                <p><strong>Date:</strong> Sep 2025 – Nov 2025</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/AmineJml/parallel-exercises" target="_blank">Repo Link</a></p>
+            </div>
+        </div>
+
+        <!-- Add more projects here following the same structure -->
+
+    </section>
+
+    <footer>
+        <p>© Amine Jamal</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("mobileMenu");
+            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+        }
+
+        function toggleProject(header) {
+            const content = header.nextElementSibling;
+            const arrow = header.querySelector('.arrow');
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                arrow.textContent = '►';
+            } else {
+                content.style.display = "block";
+                arrow.textContent = '▼';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
