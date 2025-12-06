@@ -206,13 +206,35 @@ footer {
 
 .project-content {
     display: none;
-    padding: 15px 20px;
+    padding: 20px 25px;
+    background-color: rgba(33, 54, 71, 0.541);
     border-top: 1px solid rgba(255,255,255,0.08);
 }
 
+.project-content {
+    animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-content strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
 .project-content p {
-    margin-bottom: 10px;
+    margin: 20px;
     line-height: 1.4;
+    font-size: 110% ;
 }
 
 .project-content a {
