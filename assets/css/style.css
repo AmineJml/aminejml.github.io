@@ -40,9 +40,13 @@ nav {
   justify-content: space-between;
 }
 
-.logo {
+.logo a {
+  color: #ffffff;
   font-weight: 800;
   letter-spacing: 1px;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: 0.2s;
 }
 
 .nav-links a {
