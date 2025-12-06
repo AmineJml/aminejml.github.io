@@ -84,7 +84,19 @@ nav {
   max-width: 1100px;
   margin: 80px auto;
   padding: 0 30px;
+  
 }
+
+.section::after {
+    content: "";
+    display: block;
+    width: 800px;
+    height: 1px;
+    margin: 40px auto 0;
+    background: rgba(255, 255, 255, 0.226); /* subtle line color */
+    border-radius: 1px;
+}
+
 
 .section h2 {
   font-size: 1.8rem;
@@ -207,7 +219,7 @@ footer {
 .project-content {
     display: none;
     padding: 20px 25px;
-    background-color: rgba(33, 54, 71, 0.541);
+    background-color: rgba(49, 73, 92, 0.267);
     border-top: 1px solid rgba(255,255,255,0.08);
 }
 
