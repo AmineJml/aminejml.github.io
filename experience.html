@@ -1,1 +1,90 @@
-<H1> EXPEREINCE</H1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Amine Jamal | Experience</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <div class="grid-bg"></div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><a href="index.html">Amine Jamal</a></div>
+
+            <div class="nav-links desktop-nav">
+                <a href="projects.html">Projects</a>
+                <a href="experience.html">Experience</a>
+                <a href="activities.html">Activities</a>
+            </div>
+
+            <div class="menu-btn" onclick="toggleMenu()">⋮</div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="projects.html">Projects</a>
+            <a href="experience.html">Experience</a>
+            <a href="activities.html">Activities</a>
+        </div>
+    </nav>
+
+    <section class="section">
+        <h2>Professional Experience</h2>
+
+        <div class="card">
+            <h3>Technical Consultant, APGAR</h3>
+            <p>Jan 2024 – Aug 2025 | Byblos, Lebanon</p>
+            <ul>
+                <li>Supported L’Oréal's global master data management project by troubleshooting and resolving technical issues.</li>
+                <li>Optimized code via performance tuning and stress testing to improve system reliability.</li>
+                <li>Maintained EBX servers ensuring high availability and quick issue resolution.</li>
+                <li>Enhanced processes and implemented best practices in TIBCO EBX using Java.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Software Engineer Intern, GET Group Holdings</h3>
+            <p>Jun 2022 – Jul 2022 | Dubai, UAE</p>
+            <ul>
+                <li>Assisted in developing a face recognition app for patrolling police officers using Google ML Kit.</li>
+                <li>Gained skills in mobile development, Java, ASP.NET, Entity Framework, and API development.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Software Engineer Intern, Deniyeh Information and Statistics</h3>
+            <p>Jul 2022 – Aug 2022 | Deniyeh, Lebanon</p>
+            <ul>
+                <li>Developed dynamic forms with Visual Studio interacting with a database.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Links</h2>
+        <div class="links">
+            <a href="assets/Amine_Jamal_CV.pdf" target="_blank">CV</a>
+            <a href="https://github.com/AmineJml" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/amine-jamal-a06012220/" target="_blank">LinkedIn</a>
+            <a href="mailto:aminejamal003@gmail.com">Email</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© Amine Jamal</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+
+</body>
+
+</html>
