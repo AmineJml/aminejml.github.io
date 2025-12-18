@@ -115,7 +115,7 @@ nav {
 .section::after {
     content: "";
     display: block;
-    width: 100%;
+    max-width: 100%;
     width: 800px;
     height: 1px;
     margin: 40px auto 0;
@@ -329,6 +329,21 @@ footer {
   .desktop-nav {
     display: none;
   }
+
+  nav {
+    padding: 20px 20px; 
+  }
+
+  .nav-container {
+    width: 100%;
+  }
+  
+  /* Optional: Reduce section padding slightly on mobile */
+  .section, .hero {
+    padding: 0 20px;
+  }
+
+
 
   .menu-btn {
     display: block;
